@@ -45,7 +45,7 @@ public class Bai3 {
         while (t-- > 0) {
             long x = input.nextLong();
             long res = 1;
-            for (int i = 2; i * i <= x; i++) {
+            for (int i = 2; i <= Math.sqrt(x); i++) {
                 while (x % i == 0) {
                     x /= i;
                     res = i;

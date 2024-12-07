@@ -108,10 +108,12 @@ public class Bai59 {
             
         }
         System.out.println("DANH SACH SINH VIEN BAO CAO CA SANG: " + morningAssignments.size());
+        Collections.sort(morningAssignments);
         for (Assignment x : morningAssignments) {
             System.out.println(x);
         }
         System.out.println();
+        Collections.sort(afternoonAssignments);
         System.out.println("DANH SACH SINH VIEN BAO CAO CA CHIEU: " + afternoonAssignments.size());
         for (Assignment x : afternoonAssignments) {
             System.out.println(x);

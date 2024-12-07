@@ -8,7 +8,7 @@ package bai59;
  *
  * @author P51
  */
-public class Assignment {
+public class Assignment implements Comparable<Assignment>{
     private String name, topic;
     private Report report;
     public Assignment(String name, String topic, Report report) {
@@ -25,5 +25,8 @@ public class Assignment {
     public String toString(){
         return report.getId() + " " + name + " " + topic + " " + report;
     }
-    
+    @Override
+    public int compareTo(Assignment other) {
+        return this.report.compareTo(other.report);
+    }
 }

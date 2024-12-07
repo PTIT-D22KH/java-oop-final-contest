@@ -12,7 +12,7 @@ import java.util.Date;
  *
  * @author P51
  */
-public class Report {
+public class Report implements Comparable<Report>{
     private String id;
     private SimpleDateFormat sd = new SimpleDateFormat("HH:mm");
     private SimpleDateFormat sd1 = new SimpleDateFormat("hh:mm");
@@ -41,5 +41,9 @@ public class Report {
     @Override
     public String toString(){
         return sd1.format(reportTime);
+    }
+    @Override
+    public int compareTo(Report other) {
+        return this.reportTime.compareTo(other.reportTime);
     }
 }
