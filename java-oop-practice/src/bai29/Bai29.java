@@ -69,7 +69,7 @@ public class Bai29 {
             for (int j = 0; j < n; j++) {
                 a[i][j] = input.nextInt();
                 if (a[i][j] == 1 && i < j) {
-                    list.add(new Pair<Integer, Integer>(i + 1, j + 1));
+                    list.add(new Pair<>(i + 1, j + 1));
                 }
             }
             
